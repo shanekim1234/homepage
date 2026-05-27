@@ -166,6 +166,84 @@ transform:translateY(-3px) !important;
 #download .download-note{margin-top:14px;color:#9fb7dc;font-size:13px;line-height:1.55;word-break:keep-all;}
 #download .store.full{width:100%;margin-top:20px;}
 </style>
+
+<style id="download-guide-final-fix">
+.guide-full{
+  display:block !important;
+  width:100% !important;
+  max-width:100% !important;
+  grid-column:1 / -1 !important;
+  margin-top:26px !important;
+  padding:24px 20px !important;
+  border-radius:26px !important;
+  background:#081226 !important;
+  border:1px solid rgba(100,163,255,.45) !important;
+  box-shadow:0 16px 36px rgba(0,0,0,.28) !important;
+}
+.guide-full h3{
+  font-size:24px !important;
+  line-height:1.28 !important;
+  margin:0 0 14px !important;
+  color:#fff !important;
+  letter-spacing:-.8px !important;
+  word-break:keep-all !important;
+}
+.guide-full > p{
+  font-size:16px !important;
+  line-height:1.65 !important;
+  margin:0 0 18px !important;
+  color:#d7e3f8 !important;
+  word-break:keep-all !important;
+}
+.step-row{
+  display:flex !important;
+  align-items:flex-start !important;
+  gap:12px !important;
+  width:100% !important;
+  margin:12px 0 !important;
+}
+.step-row span{
+  width:28px !important;
+  height:28px !important;
+  min-width:28px !important;
+  border-radius:50% !important;
+  background:#2f6df6 !important;
+  color:#fff !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  font-size:15px !important;
+  font-weight:900 !important;
+}
+.step-row p{
+  margin:0 !important;
+  flex:1 !important;
+  color:#eef4ff !important;
+  font-size:16px !important;
+  line-height:1.55 !important;
+  word-break:keep-all !important;
+}
+.app-open-btn{
+  width:100% !important;
+  height:58px !important;
+  margin-top:22px !important;
+  border:0 !important;
+  border-radius:29px !important;
+  background:#2f6df6 !important;
+  color:#fff !important;
+  font-size:19px !important;
+  font-weight:900 !important;
+  box-shadow:0 12px 28px rgba(47,109,246,.28) !important;
+}
+.guide-small{
+  margin-top:14px !important;
+  color:#adc4ee !important;
+  font-size:14px !important;
+  line-height:1.5 !important;
+  word-break:keep-all !important;
+}
+</style>
+
 </head>
 <body>
 <div class="app">
@@ -257,17 +335,17 @@ transform:translateY(-3px) !important;
   <div class="title-card download-title">
     <div class="small">DOWNLOAD</div>
     <h2>앱 다운로드</h2>
-    <p>현재는 플레이스토어 승인 전 단계입니다.<br>우선 법인택시용 체험버전을 직접 다운로드할 수 있도록 준비 중입니다.</p>
+    <p>아래 안내를 보고 법인택시앱을 휴대폰 홈화면에 추가해 사용하세요.</p>
   </div>
 
   <div class="card download-card main-download">
     <h3>🏢 법인택시 수입관리</h3>
     <p>사납금, 운송수입, 개인부담 연료비, 일별현황, 월집계를 관리하는 법인택시 기사님용 체험버전입니다.</p>
     <div class="store-row">
-      <button class="store primary" onclick="alert('APK 파일 연결 준비중입니다. 파일 업로드 후 바로 다운로드되도록 연결합니다.')">▶ 홈화면에 앱추가</button>
+      <button class="store primary" onclick="window.open('https://shanekim1234.github.io/taxi_corporate_app/','_blank')">▶ 홈화면에 앱추가</button>
       <button class="store" onclick="alert('플레이스토어 승인 후 연결 예정입니다.')">플레이스토어 준비중</button>
     </div>
-    <div class="download-note">※ 안드로이드 설치파일 연결 예정 / 플레이스토어 승인 후 정식 링크로 교체</div>
+    <div class="download-note">※ 이동 후 브라우저 메뉴에서 ‘홈화면에 추가’를 누르면 앱처럼 사용할 수 있습니다.</div>
   </div>
 
   <div class="card download-card pending">
