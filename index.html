@@ -37,7 +37,7 @@ p{font-size:18px;line-height:1.85;color:#d0d8e8;margin:0;word-break:keep-all}
 .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:82px;height:82px;border-radius:50%;background:rgba(255,255,255,.92);color:#000;display:flex;align-items:center;justify-content:center;font-size:40px;padding-left:6px;z-index:2}.file{font-size:16px;color:#dce6f6;margin-top:14px}
 .biz ul{padding:0;margin:0}.biz li{list-style:none;font-size:20px;line-height:2.15;color:#e2e8f0}.biz li:before{content:"✓";color:#67a4ff;margin-right:14px}
 .store-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.store{height:56px;border-radius:21px;border:1px solid rgba(255,255,255,.14);background:#2e3342;color:white;font-size:17px;font-weight:900}.store.primary{background:#2f6df6;border:0}
-.floating{position:fixed;left:50%;bottom:76px;transform:translateX(-50%);width:min(430px,100vw);pointer-events:none;z-index:20}.quick{float:right;margin-right:22px;width:144px;height:58px;border-radius:30px;border:0;background:#2f6df6;color:white;font-size:18px;font-weight:900;pointer-events:auto}
+.floating{position:fixed;left:50%;bottom:76px;transform:translateX(-50%);width:min(430px,100vw);pointer-events:none;z-index:20}.quick{float:right;margin-right:22px;width:62px;height:62px;border-radius:50%;border:0;background:linear-gradient(145deg,#4f8cff,#245bdb);color:white;font-size:28px;font-weight:900;pointer-events:auto;box-shadow:0 10px 25px rgba(0,0,0,.35);backdrop-filter:blur(6px)}
 .bottom{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(430px,100vw);height:82px;background:#040815;border-top:1px solid rgba(255,255,255,.08);display:grid;grid-template-columns:repeat(5,1fr);padding:10px;z-index:21}.nav{background:transparent;border:0;color:#aeb8c9;font-weight:900;font-size:13px;border-radius:18px}.nav.active{background:#0e285a;color:white;border:1px solid #28589f}
 
 .corp-video-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:18px}
@@ -153,6 +153,19 @@ transform:translateY(-3px) !important;
 }
 </style>
 
+
+<style id="download-clean-v3">
+/* 다운로드 페이지 정리: 불필요한 상단 여백 최소화 */
+#download.download-page{padding-top:20px !important;}
+#download .title-card{margin-top:0 !important;}
+#download .download-title{padding:28px 24px !important;border-radius:30px !important;}
+#download .download-title h2{margin:14px 0 16px !important;}
+#download .download-card{margin-top:22px !important;}
+#download .main-download{border:1px solid rgba(47,109,246,.55);box-shadow:0 20px 48px rgba(47,109,246,.15);}
+#download .pending{opacity:.88;}
+#download .download-note{margin-top:14px;color:#9fb7dc;font-size:13px;line-height:1.55;word-break:keep-all;}
+#download .store.full{width:100%;margin-top:20px;}
+</style>
 </head>
 <body>
 <div class="app">
@@ -239,10 +252,38 @@ transform:translateY(-3px) !important;
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     allowfullscreen></iframe>
 </div>
-</div><div class="file">영상 파일 연결 예정</div></div></div><div class="card biz"><h3>티아이솔루션 업무내용</h3><ul><li>앱개발 및 프로그램개발</li><li>사무자동화 문서등 체계화</li><li>로고 및 마크 창작디자인</li><li>유튜브용 쇼츠제작</li></ul></div></section>
-<section id="download"><div class="title-card"><div class="small">DOWNLOAD</div><h2>앱 다운로드</h2><p>원하는 택시 유형을 선택하여 다운로드 페이지로 이동하세요.</p></div><div class="card"><h3>🏢 법인택시용</h3><p>법인택시 수입관리 및 월집계 솔루션</p><div class="store-row"><button class="store primary">▶ 플레이스토어</button><button class="store">앱스토어</button></div></div><div class="card"><h3>🚕 개인택시용</h3><p>개인 수입 및 지출 자동관리</p><div class="store-row"><button class="store primary">▶ 플레이스토어</button><button class="store">앱스토어</button></div></div><div class="card"><h3>🤝 조합택시용</h3><p>조합형 정산 및 통계관리</p><div class="store-row"><button class="store primary">▶ 플레이스토어</button><button class="store">앱스토어</button></div></div></section>
-<section id="contact"><div class="title-card"><div class="small">CONTACT</div><h2>상담문의</h2><p>앱개발, 홈페이지 제작, 업무자동화, 홍보영상 제작 상담을 환영합니다.</p></div><div class="card" onclick="showPage('home')" style="cursor:pointer;"><h3>메인으로</h3><p>전화, 카카오톡, 이메일 연결 영역은 추후 삽입합니다.</p></div></section>
-<div class="floating"><button class="quick" onclick="showPage('home')">메인으로</button></div>
+</div><div class="card biz"><h3>티아이솔루션 업무내용</h3><ul><li>앱개발 및 프로그램개발</li><li>사무자동화 문서등 체계화</li><li>로고 및 마크 창작디자인</li><li>유튜브용 쇼츠제작</li></ul></div></section>
+<section id="download" class="download-page">
+  <div class="title-card download-title">
+    <div class="small">DOWNLOAD</div>
+    <h2>앱 다운로드</h2>
+    <p>현재는 플레이스토어 승인 전 단계입니다.<br>우선 법인택시용 체험버전을 직접 다운로드할 수 있도록 준비 중입니다.</p>
+  </div>
+
+  <div class="card download-card main-download">
+    <h3>🏢 법인택시 수입관리</h3>
+    <p>사납금, 운송수입, 개인부담 연료비, 일별현황, 월집계를 관리하는 법인택시 기사님용 체험버전입니다.</p>
+    <div class="store-row">
+      <button class="store primary" onclick="alert('APK 파일 연결 준비중입니다. 파일 업로드 후 바로 다운로드되도록 연결합니다.')">▶ APK 다운로드</button>
+      <button class="store" onclick="alert('플레이스토어 승인 후 연결 예정입니다.')">플레이스토어 준비중</button>
+    </div>
+    <div class="download-note">※ 안드로이드 설치파일 연결 예정 / 플레이스토어 승인 후 정식 링크로 교체</div>
+  </div>
+
+  <div class="card download-card pending">
+    <h3>🚕 개인택시용</h3>
+    <p>개인 수입과 지출을 직접 관리하는 개인택시용 앱은 준비 중입니다.</p>
+    <button class="store full" onclick="alert('개인택시용은 준비중입니다.')">준비중</button>
+  </div>
+
+  <div class="card download-card pending">
+    <h3>🤝 조합택시용</h3>
+    <p>조합형 정산과 공동 관리를 위한 조합택시용 앱은 준비 중입니다.</p>
+    <button class="store full" onclick="alert('조합택시용은 준비중입니다.')">준비중</button>
+  </div>
+</section>
+<section id="contact"><div class="title-card"><div class="small">CONTACT</div><h2>상담문의</h2><p>앱개발, 홈페이지 제작, 업무자동화, 홍보영상 제작 상담을 환영합니다.</p></div><div class="card" onclick="showPage('home')" style="cursor:pointer;"><h3>⌂</h3><p>전화, 카카오톡, 이메일 연결 영역은 추후 삽입합니다.</p></div></section>
+<div class="floating"><button class="quick" onclick="showPage('home')">⌂</button></div>
 <nav class="bottom"><button class="nav active" onclick="showPage('home')">홈</button><button class="nav" onclick="showPage('corp')">법인<br>택시</button><button class="nav" onclick="showPage('personal')">개인<br>택시</button><button class="nav" onclick="showPage('union')">조합<br>택시</button><button class="nav" onclick="showPage('company')">회사<br>소개</button></nav>
 </div>
 <script>
