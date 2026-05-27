@@ -244,6 +244,28 @@ transform:translateY(-3px) !important;
 }
 </style>
 
+
+<style id="password-notice-final">
+.password-notice{
+  margin-top:18px;
+  margin-bottom:14px;
+  padding:14px 16px;
+  border-radius:18px;
+  background:rgba(255,214,10,.08);
+  border:1px dashed rgba(255,214,10,.75);
+  color:#ffd84d;
+  font-size:17px;
+  font-weight:900;
+  line-height:1.45;
+  word-break:keep-all;
+}
+.password-notice span{
+  color:#fff;
+  font-size:19px;
+  letter-spacing:.5px;
+}
+</style>
+
 </head>
 <body>
 <div class="app">
@@ -341,11 +363,14 @@ transform:translateY(-3px) !important;
   <div class="card download-card main-download">
     <h3>🏢 법인택시 수입관리</h3>
     <p>사납금, 운송수입, 개인부담 연료비, 일별현황, 월집계를 관리하는 법인택시 기사님용 체험버전입니다.</p>
-    <div class="store-row">
+    
+<div class="password-notice">🔐 무료버전 비밀번호 : <span>0000</span></div>
+
+<div class="store-row">
       <button class="store primary" onclick="window.open('https://shanekim1234.github.io/taxi_corporate_app/','_blank')">▶ 홈화면에 앱추가</button>
       <button class="store" onclick="alert('플레이스토어 승인 후 연결 예정입니다.')">플레이스토어 준비중</button>
     </div>
-    <div class="download-note">※ 이동 후 브라우저 메뉴에서 ‘홈화면에 추가’를 누르면 앱처럼 사용할 수 있습니다.</div>
+    <div class="download-note">※ 실행 후 비밀번호 0000 입력 / 브라우저 메뉴에서 ‘홈화면에 추가’를 누르면 앱처럼 사용할 수 있습니다.</div>
   </div>
 
   <div class="card download-card pending">
